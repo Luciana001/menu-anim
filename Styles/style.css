@@ -1,0 +1,63 @@
+.image {
+	display: flex;
+	border:1px grey solid;
+	height: 4rem;
+	width: 4rem;
+	background-color: #303030;	
+	z-index: 1;
+	justify-content:center;
+	align-items: center;
+	margin-bottom: -20px;
+}
+.image img{
+	background-position: left top;
+	background-size: cover;
+	-webkit-transform: scale(0.1);
+	-moz-transform: scale(0.1);
+	-ms-transform: scale(0.1);
+	-o-transform: scale(0.1);
+	transform: scale(0.1);
+	
+}
+.image:hover{
+	background-color: white;
+	
+}
+
+
+body{
+	background-color: grey;
+}
+
+.txt{
+	display: flex;
+	background: #303030;
+	width: 8rem;
+	opacity: 0;
+	transition: opacity 1s, margin-left 1s;
+	margin-left: -8rem;
+	justify-content:center;
+	align-items: center;
+	color: white;
+}
+.image:hover + .txt{
+	opacity: 1;
+	margin-left: 0;
+}
+
+
+.list{
+	display: flex;
+	grid-template-columns: 4rem 8rem;
+	grid-template-rows: 4rem;
+	grid-gap: 0px 0px;
+	grid-template-areas: ".image .txt";
+}
+.menu{
+	width:16rem;
+	height: 32rem;
+}
+
+
+
+
