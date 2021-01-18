@@ -33,12 +33,14 @@ body{
 	display: flex;
 	background: #303030;
 	width: 8rem;
+	height: 4rem;
 	opacity: 0;
 	transition: opacity 1s, margin-left 1s;
 	margin-left: -8rem;
 	justify-content:center;
 	align-items: center;
 	color: white;
+	margin-bottom: -20px;
 }
 .image:hover + .txt{
 	opacity: 1;
